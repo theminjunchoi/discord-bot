@@ -1,11 +1,14 @@
-# 1. Java 17 JDK 기반 이미지
+# 1단계: Gradle로 jar 빌드
+FROM gradle:8.4.0-jdk17 AS builder
+
+WORKDIR /app
+COPY . .
+RUN gradle shadowJar
+
+# 2단계: 빌드된 jar만 복사해서 실행
 FROM eclipse-temurin:17-jdk
 
-# 2. 작업 디렉토리 지정 (이 안에서 jar 실행됨)
 WORKDIR /app
+COPY --from=builder /app/build/libs/bot.jar app.jar
 
-# 3. jar 파일 복사
-COPY build/libs/bot.jar app.jar
-
-# 4. jar 실행 커맨드
 CMD ["java", "-jar", "app.jar"]
