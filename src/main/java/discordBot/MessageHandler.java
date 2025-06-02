@@ -38,6 +38,9 @@ public class MessageHandler {
         if (msg.contains("율무")) {
             return RandomPicker.chooseFrom(Answer.YULMOO.getMessages());
         }
+        if (msg.contains("행성")) {
+            return RandomPicker.chooseFrom(Answer.HANGSEONG.getMessages());
+        }
 
         // ETC
         if (msg.startsWith("와")) {
@@ -48,6 +51,9 @@ public class MessageHandler {
         }
         if (msg.contains("참깨스틱") || msg.contains("push")) {
             return RandomPicker.chooseFrom(Answer.ED.getMessages());
+        }
+        if (msg.contains("ㅋㅋ")) {
+            return RandomPicker.chooseFrom(Answer.KKK.getMessages());
         }
         return "";
     }

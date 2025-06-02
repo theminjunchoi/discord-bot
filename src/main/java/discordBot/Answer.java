@@ -10,6 +10,13 @@ public enum Answer {
             "잠은 죽어서 잔다",
             "잠이 오니?"
     )),
+    KKK(List.of(
+            "ㅋㅎㅋㅎㅋㅎㅋㅋㅎㅋㅎㅋㅋㅎㅎ",
+            "ㅋㅋ 그정도는 아닌데",
+            "뭐가 웃김?",
+            "ㅋ",
+            "하암"
+    )),
 
     // MEMBER 관련
     ED(List.of(
@@ -22,7 +29,8 @@ public enum Answer {
     MJ(List.of(
             "미션 어디까지 함?",
             "집 갈 사람??",
-            "나 부름?"
+            "나 부름?",
+            "나약하네?"
     )),
     KALI(List.of(
             "야야",
@@ -53,7 +61,9 @@ public enum Answer {
             "롯댔네",
             "다 지우고 push 날려",
             "엠제이 오버워치 잘하더라",
-            "아잉"
+            "아잉",
+            "오늘은 내가 쏜다!",
+            "임금님?"
     )),
     VECTOR(List.of(
             "ㅇㅇ 맞긴해",
@@ -64,7 +74,7 @@ public enum Answer {
     LINK(List.of(
             "슈... 슈슉",
             "링교수님",
-            ""
+            "귀요미"
     )),
     GANGSAN(List.of(
             "에드 할 거 하러 가야지",
@@ -74,7 +84,18 @@ public enum Answer {
     YULMOO(List.of(
             "칼리의 언니",
             "칼리와 싸우면 진다는 소문이 있다.",
-            "GDD 창시자"
+            "GDD 창시자",
+            "하남자",
+            "진짜 귀요미"
+    )),
+    HANGSEONG(List.of(
+            "왜 불러",
+            "나 부름?",
+            "뭐 임마",
+            "그만 불러",
+            "Why?",
+            "ㅋ?",
+            "ㅖ?"
     ));
 
     private final List<String> messages;
